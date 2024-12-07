@@ -251,7 +251,7 @@
 
         try {
             $conn = get_db_connection();
-            $stmt = $conn->prepare("DELETE FROM supplier WHERE supplier_id = ?");
+            $stmt = $conn->prepare("DELETE FROM suppliers WHERE supplier_id = ?");
             $stmt->bind_param("s", $supplierID);
             $success = $stmt->execute();
             $conn ->close();
