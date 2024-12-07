@@ -12,7 +12,7 @@
                 }
                 break;
             case 'remove':
-                if (remove_supplier($_POST['sD'])) {
+                if (remove_supplier($_POST['sID'])) {
                     echo '<div class="alert alert-success alert-dismissible mx-5" role="alert">Successfully removed.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
                 } else {
                     echo '<div class="alert alert-danger alert-dismissible mx-5" role="alert">Error.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
